@@ -5,9 +5,12 @@ import Link from "next/link";
 const PresentationSection = function () {
   return (
     <>
-      <Container>
+      <Container className="py-4">
         <Row>
-          <Col md>
+          <Col
+            md
+            className="d-flex flex-column justify-content-center align-items-start"
+          >
             <p className={styles.subTitle}>ACESSO ILIMITADO</p>
             <p className={styles.title}>
               Tenha acesso aos melhores <br /> tutoriais de Programação.
@@ -18,7 +21,7 @@ const PresentationSection = function () {
             </p>
             <Link href="/register">
               <Button outline className={styles.btnCta}>
-                Acesse agora{" "}
+                ACESSE AGORA
                 <img
                   src="/buttonPlay.svg"
                   alt="ButtonImg"
@@ -33,6 +36,15 @@ const PresentationSection = function () {
               alt="imgIndex"
               className={styles.imgPresentation}
             ></img>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex justify-content-center pt-5">
+            <img
+              src="/homeNoAuth/iconArrowDown.svg"
+              alt="arrowDown"
+              className={styles.arrowDown}
+            />
           </Col>
         </Row>
       </Container>
